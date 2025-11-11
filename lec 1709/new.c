@@ -12,7 +12,7 @@
 //     {
 //         printf("%d",arr[j]);
 //     }
-int main()
+/*int main()
 {
     int arr[5];
     int check = 1;
@@ -35,4 +35,15 @@ int main()
     }
     else
         printf("its not palindrome");
+}*/
+int main()
+{
+    char name[] = "Mohdsamid";
+    char data[20];
+    for (int i = 0; name[i] != '\0'; i++)
+    {
+        data[i] = name[i];
+    }
+    printf("%s", data);
+    return 0;
 }
