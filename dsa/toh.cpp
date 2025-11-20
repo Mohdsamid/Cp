@@ -2,9 +2,10 @@
 using namespace std;
 
 void towerOfHanoi(int n, char from, char to, char aux) {
-    if (n == 1) 
+    if (n == 1){
     cout << "Move disk 1 from " << from << " to " << to << endl;
     return;
+    }
     towerOfHanoi(n - 1, from, aux, to);
 
     // Move the nth disk from source to destination
@@ -22,3 +23,4 @@ int main() {
     towerOfHanoi(n, 'A', 'B', 'C');
     return 0;
 }
+
